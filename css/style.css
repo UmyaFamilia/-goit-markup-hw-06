@@ -29,11 +29,13 @@
   .link {
     text-decoration: none;
     color: var(--title-color);
+    outline: none;
   }
   .button {
     font-family: inherit;
     cursor: pointer;
     border: 0px;
+    outline: none;
   }
   .list {
     list-style: none;
@@ -225,8 +227,10 @@
     position: relative;
     padding-right: 40px;
     padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
    width: 528px;
-   padding-bottom: 40px;
+  
 
   }
   .modal-close{
@@ -255,8 +259,8 @@
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
-    padding-top: 40px;
+    color: var(--title-color);
+    
   
 
   }
@@ -309,12 +313,16 @@
     letter-spacing: 0.01em;
     height: 120px;
     width: 100%;
-    color: #757575; 
-    margin-bottom: 20px; 
+    color:var(--undertitle-font-color); 
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+  }
+
+  .wrapper4{
+    position: relative;
+    margin-bottom: 20px;
   }
   .lable-name{
     margin-top: 12px;
@@ -344,9 +352,11 @@
   
   }
   .checkbox{
-    
     align-items: baseline;
+    display: flex;
+    justify-content: center;
   }
+
   .lable-checkbox {
   font-weight: 400;
   font-size: 14px;
@@ -355,8 +365,8 @@
    display: flex;
   letter-spacing: 0.03em;
   align-items: center;
- 
   }
+
   .lable-checkbox::before{
     content: " ";
     width: 16px;
@@ -370,7 +380,7 @@
     border: none;
     background-image:url(../images/Vector\ \(4\).svg);
     background-position-y: center;
-    background-position-x:right;
+    background-position-x:center;
     background-repeat:no-repeat;
   }
   .visualli-hiden{
@@ -571,11 +581,12 @@
   }
   .customer-list{
     display: flex;
+    justify-content: space-between;
     margin-top: 50px;
     padding-bottom: 95px;
   }
   .customers-item{
-    margin-right: 30px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -602,6 +613,8 @@
   }
   .customers-item:hover, .customers-item:focus{
     border-color:var(--main-font-color);
+    outline: none;
+    
   }
   .customers-item:hover .customers-icon{
     fill:var(--main-font-color);
@@ -621,6 +634,8 @@
   .footers-conteiner{
     display: flex;
     align-items:baseline;
+    justify-content: space-between;
+    
   }
   .footer-logo{
     margin-bottom: 19px;
@@ -685,7 +700,7 @@
   .join{
     display:flex;
     display:inline-block;
-    margin-left: 70px;
+   
   }
   
   .join-span{
@@ -728,7 +743,7 @@
     background-color: var(--main-font-color);
   }
   .signup{
-    margin-left: 93px;
+  
   }
   .footer-form{
     display: flex;
@@ -746,8 +761,17 @@
     width: 358px;
      height:50px;
     border-radius: 4px;
+    padding-left: 16px;
    
   }
+  .footer-input:focus{
+    border-color: rgba(255, 255, 255, 0.6);
+      
+  }
+  .footer-input:focus::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+  }
+
   .footer-button{
     display: flex;
     background: #2196F3;

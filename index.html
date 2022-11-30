@@ -89,14 +89,14 @@
                     <use href="./images/icons.svg#icon-Vector"></use>
                   </svg>
                  </button>
-                 <h3 class="modal-title">
+                 <p class="modal-title">
                   Залиште свої дані, ми вам передзвонимо
-                </h3>
-                <form action="" class="modal-form">
+                 </p>
+                <form class="modal-form">
                   <label for="customers-name" class="lable lable-name">Ім'я</label>
                   <div class="form-wrapper wrapper1">
                    <input type="text" name="customers-name" id="customers-name" class="customers-input customers-name" >
-                   <svg class="svg-icon-name form-svg" width="18"height="18px">
+                   <svg class="svg-icon-name form-svg" width="18" height="18px">
                     <use href="./images/icons.svg#icon-person">
                     </use>
                    </svg>
@@ -104,8 +104,8 @@
 
                 <label for="customers-phone" class="lable lable-phone">Телефон</label>
                   <div class="form-wrapper wrapper2">
-                    <input type="tel" name="customers-phone" id="customers-phone"class="customers-input customers-phone">
-                    <svg class="svg-icon-phone form-svg" width="18"height="18px">
+                    <input type="tel" name="customers-phone" id="customers-phone" class="customers-input customers-phone">
+                    <svg class="svg-icon-phone form-svg" width="18" height="18px">
                       <use href="./images/icons.svg#icon-phone">
                       </use>
                      </svg>
@@ -113,22 +113,22 @@
 
                     <label for="customers-email" class="lable lable-email"> Пошта</label>
                    <div class="form-wrapper wrapper3">
-                    <input type="email" name="customers-email" id="customers-email"class="customers-input customers-email">
-                    <svg class="svg-icon-email form-svg" width="18"height="18px">
+                    <input type="email" name="customers-email" id="customers-email" class="customers-input customers-email">
+                    <svg class="svg-icon-email form-svg" width="18" height="18px">
                       <use href="./images/icons.svg#icon-email">
                       </use>
                      </svg>
                   </div>
 
                   <label for="feedback" class="lable lable-text">Коментар </label>
-                   <div class="form-wrapper wrapper4">
-                    <textarea class="feedback customers-input " name="feedback" id="feedback"rows="10" placeholder="Введіть текст" ></textarea>
+                   <div class="wrapper4">
+                    <textarea class="feedback customers-input " name="feedback" id="feedback" rows="10" placeholder="Введіть текст" ></textarea>
                     
                   </div>
                   <div class="checkbox">
-                   <input type="checkbox" name="agree" value="agree"id="agree" class="visualli-hiden">
-                   <label for="agree" class="lable lable-checkbox"><p>
-                    Погоджуюся з розсилкою та приймаю <a class="link checkbox-link" href="#">Умови договору</a></label>
+                   <input type="checkbox" name="agree" value="agree" id="agree" class="visualli-hiden">
+                   <label for="agree" class="lable lable-checkbox">
+                 <span>Погоджуюся з розсилкою та приймаю <a class="link checkbox-link" href="#">Умови договору</a></span></label>
                 </div>
 
                   <button type="submit" class="button send"> Відправити</button>
@@ -360,48 +360,54 @@
         <div class="conteiner">
           <h2 class="title-h2 customers-title">Постійні клієнти</h2>
           <ul class="list customer-list">
-            <a class="customers-item" href=""><li>
+            <li> <a class="customers-item" href="">
               <svg class="customers-icon" width ="106"
               height="60">
                 <use href="./images/icons.svg#icon-Logo-5"></use>
               </svg>
-            </li>
+            
             </a>
-            <a class="customers-item" href=""><li>
+          </li>
+          <li> 
+            <a class="customers-item" href="">
               <svg class="customers-icon" width ="106"
               height="60">
                 <use href="./images/icons.svg#icon-Logo-6"></use>
             </svg>
-            </li>
           </a>
-            <a class="customers-item" href=""><li>
-              <svg class="customers-icon"width ="106"
+        </li>
+        <li>  <a class="customers-item" href="">
+              <svg class="customers-icon" width ="106"
               height="60">
                 <use href="./images/icons.svg#icon-Logo-7"></use>
               </svg>
-            </li>
+           
           </a>
-            <a class="customers-item" href=""><li>
-              <svg class="customers-icon"width ="106"
+        </li>
+          <li>  <a class="customers-item" href="">
+              <svg class="customers-icon" width ="106"
               height="60">
                 <use href="./images/icons.svg#icon-Logo-8"></use>
               </svg>
-            </li>
+           
           </a>
-            <a class="customers-item" href=""><li>
-              <svg class="customers-icon"width ="106"
+        </li>
+          <li>  <a class="customers-item" href="">
+              <svg class="customers-icon" width ="106"
               height="60">
                 <use href="./images/icons.svg#icon-Logo-9"></use>
               </svg>
-            </li>
+            
           </a>
-          <a class="customers-item" href=""><li>
-              <svg class="customers-icon"width ="106"
+        </li>
+          <li>   <a class="customers-item" href="">
+              <svg class="customers-icon" width ="106"
               height="60">
                 <use href="./images/icons.svg#icon-Logo-10"></use>
               </svg>
-            </li>
+            
           </a>
+        </li>
           </ul>
 
         </div>
@@ -459,9 +465,9 @@
 
          <div class="signup">
           <span class="join-span">Підпишіться на розсилку</span>
-          <form action="" class="footer-form ">
-            <input type="text" class="footer-input" placeholder="E-mail" name="E-mail">
-            <button type="submit"class="button footer-button">Підписатися
+          <form  class="footer-form ">
+            <input id="footer-input" type="text" class="footer-input" placeholder="E-mail" name="E-mail">
+            <button type="submit" class="button footer-button">Підписатися
               <svg class="footer-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send" ></use>
               </svg>
